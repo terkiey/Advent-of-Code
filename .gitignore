@@ -1,4 +1,5 @@
 *input.txt
-/C# Solution/.vs/C# Solution
-/C# Solution/obj
+/C# Solution/.vs*
+/C# Solution/obj*
+/C# Solution/bin*
 *.sln
