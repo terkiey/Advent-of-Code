@@ -2,5 +2,6 @@
 
 public interface IIdValidator
 {
-    bool ValidateId(string id);
+    bool ValidateIdPartOne(string id);
+    bool ValidateIdPartTwo(string id);
 }
