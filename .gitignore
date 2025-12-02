@@ -1,5 +1,15 @@
 *input.txt
-/C# Solution/.vs*
+*.vs
 /C# Solution/obj*
-/C# Solution/bin*
+C#/C# Solution/bin*
 *.sln
+/C#/C# Solution/.vs
+C#/C# Solution/obj*
+*.props
+*.json
+*.cache
+*.targets
+*.editorconfig
+*GlobalUsings*
+*AssemblyInfo*
+*.NETCoreApp*
