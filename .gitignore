@@ -13,3 +13,7 @@ C#/C# Solution/obj*
 *GlobalUsings*
 *AssemblyInfo*
 *.NETCoreApp*
+*.dll
+*.pdb
+*csproj.*
+*.exe
