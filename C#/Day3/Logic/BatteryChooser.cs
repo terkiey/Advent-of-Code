@@ -33,7 +33,7 @@ internal class BatteryChooser : IBatteryChooser
         return (firstDigit * 10) + secondDigit;
     }
 
-    public double Choose12Batteries(string bank)
+    public long Choose12Batteries(string bank)
     {
         // Translate to a list of ints.
         List<int> intList = [];
@@ -52,7 +52,7 @@ internal class BatteryChooser : IBatteryChooser
             batteriesAfter--;
         }
 
-        return double.Parse(joltagesString);
+        return long.Parse(joltagesString);
     }
 
     private RecursionState ChooseBattery(List<int> batteryIntList, int batteriesAfter)

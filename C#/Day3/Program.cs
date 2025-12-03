@@ -7,7 +7,7 @@ internal class Program
         IBatteryChooser _batteryChooser = new BatteryChooser();
 
         string[] batteryBanks = File.ReadAllLines("day3input.txt");
-        double sumJoltage = 0;
+        long sumJoltage = 0;
         foreach(string batteryBank in batteryBanks)
         {
             sumJoltage += _batteryChooser.Choose2Batteries(batteryBank);
