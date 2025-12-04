@@ -19,7 +19,7 @@ internal class Program
 
         while (true)
         {
-        Console.WriteLine("Type the day number as an integer (12, 3, 7, 20)");
+        Console.WriteLine("Type the day number.");
         string? userInput = Console.ReadLine();
     
         bool daySet = false;

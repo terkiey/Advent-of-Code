@@ -7,7 +7,21 @@ internal class Day4 : IDay
 
     public void Main()
     {
-        string path = Path.Combine(AppContext.BaseDirectory, "Data", "day4testinput.txt");
-        List<string> gridRows = File.ReadAllLines(path).ToList();
+        string path = Path.Combine(AppContext.BaseDirectory, "Data", "day4input.txt");
+        string[] gridRowStrings = File.ReadAllLines(path);
+
+        IRollRater _paperRater = new RollRater(gridRowStrings);
+
+        _paperRater.RateRolls();
+        int peelCounter = _paperRater.AccessibleRollCount;
+        AnswerOne = peelCounter.ToString();
+
+        while (_paperRater.PeelLayer())
+        {
+            _paperRater.RateRolls();
+            peelCounter += _paperRater.AccessibleRollCount;
+        }
+
+        AnswerTwo = peelCounter.ToString();
     }
 }
