@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace Day2;
+﻿namespace AoC;
 
 internal class IdValidator : IIdValidator
 {

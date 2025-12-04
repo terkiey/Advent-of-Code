@@ -1,6 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
-
-namespace Day1;
+﻿namespace AoC;
 
 
 internal class SafeTracker : ISafeTracker

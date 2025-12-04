@@ -1,5 +1,4 @@
-﻿namespace Day1;
-
+﻿namespace AoC;
 
 internal class Safe : ISafe
 {

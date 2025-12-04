@@ -1,4 +1,4 @@
-﻿namespace Day1;
+﻿namespace AoC;
 
 /// <summary>
 /// Translates instructions and keeps track of the dial position after making turns. Also broadcasts dial turn events to be solved elsewhere.

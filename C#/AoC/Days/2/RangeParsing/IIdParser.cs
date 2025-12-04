@@ -1,4 +1,4 @@
-﻿namespace Day2;
+﻿namespace AoC;
 
 public interface IIdParser
 {

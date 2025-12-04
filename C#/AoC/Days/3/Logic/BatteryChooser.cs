@@ -1,4 +1,4 @@
-﻿namespace Day3;
+﻿namespace AoC;
 
 internal class BatteryChooser : IBatteryChooser
 {

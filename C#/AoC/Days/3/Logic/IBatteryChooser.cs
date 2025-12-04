@@ -1,4 +1,4 @@
-﻿namespace Day3;
+﻿namespace AoC;
 
 public interface IBatteryChooser
 {

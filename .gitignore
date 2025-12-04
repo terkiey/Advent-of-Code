@@ -17,3 +17,6 @@ C#/C# Solution/obj*
 *.pdb
 *csproj.*
 *.exe
+/C#/Day 1/Day1.csproj
+/C#/Day2/Day2.csproj
+/C#/Day3/Day3.csproj

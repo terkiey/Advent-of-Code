@@ -1,12 +1,17 @@
-﻿using System.Runtime.InteropServices;
+﻿namespace AoC;
 
-namespace Day2;
-
-internal class Program
+/// <summary>
+/// This is the composition root.
+/// </summary>
+internal class Day2 : IDay
 {
-    static async Task Main(string[] args)
+    public string AnswerOne { get; private set; } = String.Empty;
+    public string AnswerTwo { get; private set; } = String.Empty;
+
+    public void Main()
     {
-        string input = File.ReadAllLines("day2input.txt")[0];
+        string path = Path.Combine(AppContext.BaseDirectory, "Data", "day2input.txt");
+        string input = File.ReadAllLines(path)[0];
 
         IIdParser _idParser = new IdParser();
         List<string[]> ranges = _idParser.ParseIdRanges(input);
@@ -19,7 +24,7 @@ internal class Program
             double rangeStart = double.Parse(range[0]);
             double rangeEnd = double.Parse(range[1]);
 
-            for(double id = rangeStart; id <= rangeEnd; id++)
+            for (double id = rangeStart; id <= rangeEnd; id++)
             {
                 string idString = id.ToString();
                 if (!_idValidator.ValidateIdPartOne(idString))
@@ -34,8 +39,7 @@ internal class Program
             }
         }
 
-        Console.WriteLine($"Part One Answer : {PartOneSum}");
-        Console.WriteLine($"Part Two Answer : {PartTwoSum}");
-        await Task.Delay(5000);
+        AnswerOne = PartOneSum.ToString();
+        AnswerTwo = PartTwoSum.ToString();
     }
 }
