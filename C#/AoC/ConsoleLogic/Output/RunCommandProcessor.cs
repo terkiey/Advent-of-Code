@@ -60,14 +60,14 @@ internal class RunCommandProcessor : IRunCommandProcessor
             Console.WriteLine($"Factory not found for day {day}.");
             return;
         }
-
-        IDay dayProgram = dayFactory();
+    
         DayArgs dayArgs = new(filename);
 
         List<long> fileTimes = [];
         List<long> logicTimes = [];
         for (int testIndex = 0; testIndex < testRuns; testIndex++)
         {
+            IDay dayProgram = dayFactory();
             dayProgram.Main(dayArgs);
             fileTimes.Add(dayProgram.FileTimer.ElapsedMilliseconds);
             logicTimes.Add(dayProgram.LogicTimer.ElapsedMilliseconds);
