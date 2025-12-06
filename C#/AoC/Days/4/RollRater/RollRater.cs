@@ -1,20 +1,18 @@
-﻿using System.Numerics;
-
-namespace AoC.Days;
+﻿namespace AoC.Days;
 
 internal class RollRater : IRollRater
 {
     private readonly char[][] _grid;
     private readonly int _gridRowCount;
     private readonly int _gridColCount;
-    
+
 
     private int[][] rateMap;
     private bool[][] accessibleRollGrid;
 
-    public int AccessibleRollCount 
+    public int AccessibleRollCount
     {
-        get 
+        get
         {
             return accessibleRollGrid.SelectMany(inner => inner).Count(gridIsAccessibleRoll => gridIsAccessibleRoll);
         }
@@ -28,7 +26,7 @@ internal class RollRater : IRollRater
         _grid = new char[_gridRowCount][];
         rateMap = new int[_gridRowCount][];
         accessibleRollGrid = new bool[_gridRowCount][];
-        
+
         for (int rowIndex = 0; rowIndex < _gridRowCount; rowIndex++)
         {
             rateMap[rowIndex] = new int[_gridColCount];
@@ -36,7 +34,7 @@ internal class RollRater : IRollRater
             accessibleRollGrid[rowIndex] = new bool[_gridColCount];
         }
     }
-    
+
     public void RateRolls()
     {
         rateMap = new int[_gridRowCount][];
@@ -110,6 +108,4 @@ internal class RollRater : IRollRater
             }
         }
     }
-
-
 }

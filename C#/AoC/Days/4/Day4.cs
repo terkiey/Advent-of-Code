@@ -4,16 +4,16 @@ internal class Day4 : Day
 {
     protected override void RunLogic(string[] gridRowStrings)
     {
-        IRollRater _paperRater = new RollRater(gridRowStrings);
+        IRollRater _rollRater = new RollRater(gridRowStrings);
 
-        _paperRater.RateRolls();
-        int peelCounter = _paperRater.AccessibleRollCount;
+        _rollRater.RateRolls();
+        int peelCounter = _rollRater.AccessibleRollCount;
         AnswerOne = peelCounter.ToString();
 
-        while (_paperRater.PeelLayer())
+        while (_rollRater.PeelLayer())
         {
-            _paperRater.RateRolls();
-            peelCounter += _paperRater.AccessibleRollCount;
+            _rollRater.RateRolls();
+            peelCounter += _rollRater.AccessibleRollCount;
         }
 
         AnswerTwo = peelCounter.ToString();
