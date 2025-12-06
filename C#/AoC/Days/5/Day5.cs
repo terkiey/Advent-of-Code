@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics;
-
-namespace AoC.Days;
+﻿namespace AoC.Days;
 
 internal class Day5 : Day
 {
