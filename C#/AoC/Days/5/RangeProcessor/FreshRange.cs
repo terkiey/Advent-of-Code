@@ -1,12 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Drawing;
-
-namespace AoC.Days;
+﻿namespace AoC.Days;
 
 internal record FreshRange(ulong Start, ulong End)
 {
     public ulong Size
-    { get
+    {
+        get
         {
             return (End - Start) + 1;
         }
@@ -69,9 +67,9 @@ internal record FreshRange(ulong Start, ulong End)
             newEnd = Math.Max(End, otherRange.End);
         }
 
-        else if ( Start <= otherRange.End && otherRange.End <= End)
+        else if (Start <= otherRange.End && otherRange.End <= End)
         {
-             newStart = Math.Min(Start, otherRange.Start);
+            newStart = Math.Min(Start, otherRange.Start);
         }
 
         return new FreshRange(newStart, newEnd);

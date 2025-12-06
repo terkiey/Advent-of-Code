@@ -1,6 +1,4 @@
-﻿using System.Net;
-
-namespace AoC.Days;
+﻿namespace AoC.Days;
 
 internal class RangeProcessor : IRangeProcessor
 {

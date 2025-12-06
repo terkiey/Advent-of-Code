@@ -8,7 +8,7 @@ internal class EquationBuilder : IEquationBuilder
     {
         int rowCount = inputRows.Count();
         int colCount = 0;
-        string[][] inputGrid  = new string[inputRows.Length][];
+        string[][] inputGrid = new string[inputRows.Length][];
         for (int rowIndex = 0; rowIndex < inputRows.Length; rowIndex++)
         {
             string row = inputRows[rowIndex];
