@@ -2,6 +2,7 @@
 *.vs
 /C# Solution/obj*
 C#/C# Solution/bin*
+C#/AoC/bin*
 *.sln
 /C#/C# Solution/.vs
 C#/C# Solution/obj*
