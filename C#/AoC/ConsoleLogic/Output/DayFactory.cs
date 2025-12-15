@@ -1,5 +1,4 @@
 ﻿using AoC.Days;
-using System.Runtime.InteropServices.Marshalling;
 
 namespace AoC.ConsoleLogic;
 
@@ -23,7 +22,9 @@ internal class DayFactory : IDayFactory
 
     public Dictionary<int, Func<IDay>> dayFactories2015 = new()
     {
-        { 1, () => new Y2015Day1() },
+        { 1, () => new Y2015Day01() },
+        { 2, () => new Y2015Day02() },
+        { 3, () => new Y2015Day03() }
     };
 
     public DayFactory() { }
