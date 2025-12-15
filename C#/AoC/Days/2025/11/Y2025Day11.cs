@@ -2,12 +2,12 @@
 
 namespace AoC.Days;
 
-internal class Day11: Day
+internal class Y2025Day11: Day
 {
-    protected override string[] FileInput(string filename)
+    protected override string[] FileInput(string filename, int year)
     {
         FileTimer.Start();
-        string path = Path.Combine(AppContext.BaseDirectory, "Data", filename);
+        string path = Path.Combine(AppContext.BaseDirectory, "Data", year.ToString(), filename);
         List<string> input = File.ReadAllLines(path).ToList();
         
 
@@ -16,7 +16,7 @@ internal class Day11: Day
         {
             int inputLength = input.Count; 
             runIndicator = "test " + inputLength;
-            string path2 = Path.Combine(AppContext.BaseDirectory, "Data", "day11testinput2.txt");
+            string path2 = Path.Combine(AppContext.BaseDirectory, "Data", year.ToString(), "day11testinput2.txt");
             List<string> input2 = File.ReadAllLines(path2).ToList();
             input.Insert(0, runIndicator);
             input.AddRange(input2);

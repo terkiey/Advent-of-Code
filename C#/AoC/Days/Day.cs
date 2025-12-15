@@ -12,14 +12,14 @@ internal abstract class Day : IDay
 
     public void Main(DayArgs args)
     {
-        string[] input = FileInput(args.filename);
+        string[] input = FileInput(args.filename, args.year);
         RunLogicTimed(input, args.runParameter);
     }
 
-    protected virtual string[] FileInput(string filename)
+    protected virtual string[] FileInput(string filename, int year)
     {
         FileTimer.Start();
-        string path = Path.Combine(AppContext.BaseDirectory, "Data", filename);
+        string path = Path.Combine(AppContext.BaseDirectory, "Data", year.ToString(), filename);
         string[] input = File.ReadAllLines(path);
         FileTimer.Stop();
 

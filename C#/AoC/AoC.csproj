@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Data\2015\day01input.txt" />
     <None Remove="Data\day10input.txt" />
     <None Remove="Data\day10testinput.txt" />
     <None Remove="Data\day11input.txt" />
@@ -33,82 +34,85 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Data\day10input.txt">
+    <Content Include="Data\2015\day01input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day10testinput.txt">
+    <Content Include="Data\2025\day10input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day11input.txt">
+    <Content Include="Data\2025\day10testinput.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day11testinput.txt">
+    <Content Include="Data\2025\day11input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day11testinput2.txt">
+    <Content Include="Data\2025\day11testinput.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day12input.txt">
+    <Content Include="Data\2025\day11testinput2.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day12testinput.txt">
+    <Content Include="Data\2025\day12input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day1input.txt">
+    <Content Include="Data\2025\day12testinput.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2025\day01input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day1testinput.txt">
+    <Content Include="Data\2025\day01testinput.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day2input.txt">
+    <Content Include="Data\2025\day02input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day2testinput.txt">
+    <Content Include="Data\2025\day02testinput.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day3input.txt">
+    <Content Include="Data\2025\day03input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day3testinput.txt">
+    <Content Include="Data\2025\day03testinput.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day4input.txt">
+    <Content Include="Data\2025\day04input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day4testinput.txt">
+    <Content Include="Data\2025\day04testinput.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day5input.txt">
+    <Content Include="Data\2025\day05input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day5testinput.txt">
+    <Content Include="Data\2025\day05testinput.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day5testinput2.txt">
+    <Content Include="Data\2025\day05testinput2.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day6input.txt">
+    <Content Include="Data\2025\day06input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day6testinput.txt">
+    <Content Include="Data\2025\day06testinput.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day7input.txt">
+    <Content Include="Data\2025\day07input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day7testinput.txt">
+    <Content Include="Data\2025\day07testinput.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day8input.txt">
+    <Content Include="Data\2025\day08input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day8testinput.txt">
+    <Content Include="Data\2025\day08testinput.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day9input.txt">
+    <Content Include="Data\2025\day09input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\day9testinput.txt">
+    <Content Include="Data\2025\day09testinput.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

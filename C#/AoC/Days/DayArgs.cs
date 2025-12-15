@@ -2,7 +2,7 @@
 
 namespace AoC.Days;
 
-public record DayArgs(string filename)
+public record DayArgs(string filename, int year)
 {
     // For when the test input uses a different parameter setting than the real input.
     public int runParameter => FileRunParameter();
@@ -11,10 +11,10 @@ public record DayArgs(string filename)
     {
        switch (filename)
        {
-            case "day8input.txt":
+            case "day08input.txt":
                 return 1000;
 
-            case "day8testinput.txt":
+            case "day08testinput.txt":
                 return 10;
 
             default:

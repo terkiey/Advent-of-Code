@@ -4,23 +4,30 @@ namespace AoC.ConsoleLogic;
 
 internal class RunCommandProcessor : IRunCommandProcessor
 {
+    private readonly IDayFactory _dayFactory = new DayFactory();
+    private readonly int _year;
+
     public Dictionary<int, Func<IDay>> dayFactories = new()
     {
-        { 1, () => new Day1() },
-        { 2, () => new Day2() },
-        { 3, () => new Day3() },
-        { 4, () => new Day4() },
-        { 5, () => new Day5() },
-        { 6, () => new Day6() },
-        { 7, () => new Day7() },
-        { 8, () => new Day8() },
-        { 9, () => new Day9() },
-        { 10, () => new Day10() },
-        { 11, () => new Day11() },
-        { 12, () => new Day12() }
+        { 1, () => new Y2025Day1() },
+        { 2, () => new Y2025Day2() },
+        { 3, () => new Y2025Day3() },
+        { 4, () => new Y2025Day4() },
+        { 5, () => new Y2025Day5() },
+        { 6, () => new Y2025Day6() },
+        { 7, () => new Y2025Day7() },
+        { 8, () => new Y2025Day8() },
+        { 9, () => new Y2025Day9() },
+        { 10, () => new Y2025Day10() },
+        { 11, () => new Y2025Day11() },
+        { 12, () => new Y2025Day12() }
     };
 
-    public RunCommandProcessor() { }
+    public RunCommandProcessor(int year)
+    {
+        dayFactories = _dayFactory.GetFactory(year);
+        _year = year;
+    }
 
     public void Process(RunCommand command)
     {
@@ -52,7 +59,7 @@ internal class RunCommandProcessor : IRunCommandProcessor
         }
 
         IDay dayProgram = dayFactory();
-        DayArgs dayArgs = new(filename);
+        DayArgs dayArgs = new(filename, _year);
         dayProgram.Main(dayArgs);
 
         Console.WriteLine($"Part one answer: {dayProgram.AnswerOne}");
@@ -67,7 +74,7 @@ internal class RunCommandProcessor : IRunCommandProcessor
             return;
         }
     
-        DayArgs dayArgs = new(filename);
+        DayArgs dayArgs = new(filename, _year);
 
         List<long> fileTimes = [];
         List<long> logicTimes = [];
@@ -109,10 +116,10 @@ internal class RunCommandProcessor : IRunCommandProcessor
         switch (fileType)
         {
             case FileType.Real:
-                return "day" + day + "input.txt";
+                return "day" + day.ToString("D2") + "input.txt";
 
             case FileType.Sample:
-                return "day" + day + "testinput.txt";
+                return "day" + day.ToString("D2") + "testinput.txt";
 
             default:
                 throw new Exception("WHAT THE FUCK");
