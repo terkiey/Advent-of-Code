@@ -26,6 +26,7 @@ internal class DayFactory : IDayFactory
         { 2, () => new Y2015Day02() },
         { 3, () => new Y2015Day03() },
         { 4, () => new Y2015Day04() },
+        { 5, () => new Y2015Day05() }
     };
 
     public DayFactory() { }

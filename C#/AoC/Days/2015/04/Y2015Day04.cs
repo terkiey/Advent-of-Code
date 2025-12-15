@@ -17,11 +17,16 @@ internal class Y2015Day04 : Day
 
             if (md5[0] == 0 && md5[1] == 0 && md5[2] < 16)
             {
+                AnswerOne = AnswerOne == String.Empty ? number.ToString() : AnswerOne;
+            }
+
+            if (md5[0] == 0 && md5[1] == 0 && md5[2] == 0)
+            {
+                AnswerTwo = number.ToString();
                 break;
             }
 
             number++;
         }
-        AnswerOne = number.ToString();
     }
 }
