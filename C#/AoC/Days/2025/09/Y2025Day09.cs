@@ -2,7 +2,7 @@
 
 namespace AoC.Days;
 
-internal class Y2025Day9: Day
+internal class Y2025Day09: Day
 {
     protected override void RunLogic(string[] lines)
     {

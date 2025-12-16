@@ -9,15 +9,15 @@ internal class RunCommandProcessor : IRunCommandProcessor
 
     public Dictionary<int, Func<IDay>> dayFactories = new()
     {
-        { 1, () => new Y2025Day1() },
-        { 2, () => new Y2025Day2() },
-        { 3, () => new Y2025Day3() },
-        { 4, () => new Y2025Day4() },
-        { 5, () => new Y2025Day5() },
-        { 6, () => new Y2025Day6() },
-        { 7, () => new Y2025Day7() },
-        { 8, () => new Y2025Day8() },
-        { 9, () => new Y2025Day9() },
+        { 1, () => new Y2025Day01() },
+        { 2, () => new Y2025Day02() },
+        { 3, () => new Y2025Day03() },
+        { 4, () => new Y2025Day04() },
+        { 5, () => new Y2025Day05() },
+        { 6, () => new Y2025Day06() },
+        { 7, () => new Y2025Day07() },
+        { 8, () => new Y2025Day08() },
+        { 9, () => new Y2025Day09() },
         { 10, () => new Y2025Day10() },
         { 11, () => new Y2025Day11() },
         { 12, () => new Y2025Day12() }

@@ -6,15 +6,15 @@ internal class DayFactory : IDayFactory
 {
     public Dictionary<int, Func<IDay>> dayFactories2025 = new()
     {
-        { 1, () => new Y2025Day1() },
-        { 2, () => new Y2025Day2() },
-        { 3, () => new Y2025Day3() },
-        { 4, () => new Y2025Day4() },
-        { 5, () => new Y2025Day5() },
-        { 6, () => new Y2025Day6() },
-        { 7, () => new Y2025Day7() },
-        { 8, () => new Y2025Day8() },
-        { 9, () => new Y2025Day9() },
+        { 01, () => new Y2025Day01() },
+        { 02, () => new Y2025Day02() },
+        { 03, () => new Y2025Day03() },
+        { 04, () => new Y2025Day04() },
+        { 05, () => new Y2025Day05() },
+        { 06, () => new Y2025Day06() },
+        { 07, () => new Y2025Day07() },
+        { 08, () => new Y2025Day08() },
+        { 09, () => new Y2025Day09() },
         { 10, () => new Y2025Day10() },
         { 11, () => new Y2025Day11() },
         { 12, () => new Y2025Day12() }
@@ -22,20 +22,21 @@ internal class DayFactory : IDayFactory
 
     public Dictionary<int, Func<IDay>> dayFactories2015 = new()
     {
-        { 1, () => new Y2015Day01() },
-        { 2, () => new Y2015Day02() },
-        { 3, () => new Y2015Day03() },
-        { 4, () => new Y2015Day04() },
-        { 5, () => new Y2015Day05() },
-        { 6, () => new Y2015Day06() },
-        { 7, () => new Y2015Day07() },
-        { 8, () => new Y2015Day08() },
-        { 9, () => new Y2015Day09() },
+        { 01, () => new Y2015Day01() },
+        { 02, () => new Y2015Day02() },
+        { 03, () => new Y2015Day03() },
+        { 04, () => new Y2015Day04() },
+        { 05, () => new Y2015Day05() },
+        { 06, () => new Y2015Day06() },
+        { 07, () => new Y2015Day07() },
+        { 08, () => new Y2015Day08() },
+        { 09, () => new Y2015Day09() },
         { 10, () => new Y2015Day10() },
         { 11, () => new Y2015Day11() },
         { 12, () => new Y2015Day12() },
         { 13, () => new Y2015Day13() },
-        { 14, () => new Y2015Day14() }
+        { 14, () => new Y2015Day14() },
+        { 15, () => new Y2015Day15() },
     };
 
     public DayFactory() { }
