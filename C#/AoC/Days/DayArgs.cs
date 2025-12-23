@@ -25,6 +25,9 @@ public record DayArgs(string filename, int year)
             {
                 "day08input.txt" => 1,
                 "day08testinput.txt" => 2,
+
+                "day13input.txt" => 1,
+                "day13testinput.txt" => 2,
                 _ => 0,
             };
         }
