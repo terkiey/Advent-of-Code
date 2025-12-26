@@ -75,6 +75,10 @@
     <None Remove="Data\2016\day18testinput.txt" />
     <None Remove="Data\2016\day19input.txt" />
     <None Remove="Data\2016\day19testinput.txt" />
+    <None Remove="Data\2016\day20input.txt" />
+    <None Remove="Data\2016\day20testinput.txt" />
+    <None Remove="Data\2016\day21input.txt" />
+    <None Remove="Data\2016\day21testinput.txt" />
     <None Remove="Data\day10input.txt" />
     <None Remove="Data\day10testinput.txt" />
     <None Remove="Data\day11input.txt" />
@@ -298,6 +302,18 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\2016\day19testinput.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\day20input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\day20testinput.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\day21input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\2016\day21testinput.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\2025\day10input.txt">
