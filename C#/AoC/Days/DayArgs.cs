@@ -31,6 +31,12 @@ public record DayArgs(string filename, int year)
 
                 "day18input.txt" => 1,
                 "day18testinput.txt" => 2,
+
+                "day20input.txt" => 1,
+                "day20testinput.txt" => 2,
+
+                "day21input.txt" => 1,
+                "day21testinput.txt" => 2,
                 _ => 0,
             };
         }
