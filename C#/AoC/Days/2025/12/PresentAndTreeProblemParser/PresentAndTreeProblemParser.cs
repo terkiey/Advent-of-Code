@@ -5,8 +5,8 @@ namespace AoC.Days;
 internal class PresentAndTreeProblemParser : IPresentAndTreeProblemParser
 {
     private const int presentCount = 6;
-    private PresentShape[] PresentShapes;
-    private TreeProblem[] TreeProblems;
+    private PresentShape[] PresentShapes = [];
+    private TreeProblem[] TreeProblems = [];
 
     public PresentAndTreeProblemParser(string[] inputLines)
     {
