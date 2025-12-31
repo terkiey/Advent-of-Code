@@ -4,7 +4,6 @@ namespace AoC.Days;
 
 // I briefly considered extending the original assembunny computer as that seemed to be intended, but then it would require a bit of a refactor, which is unnecessary for throwaway puzzle solutions.
 // So I just copy pasted the code here and changed it as I wanted.
-
 internal class AssembunnyComputerV2
 {
     private long _pointer = 0;
