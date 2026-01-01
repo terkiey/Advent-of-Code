@@ -4,6 +4,8 @@ namespace AoC.ConsoleLogic;
 
 internal class DayFactory : IDayFactory
 {
+    public Dictionary<int, Dictionary<int, Func<IDay>>> _factories = new();
+
     public Dictionary<int, Func<IDay>> dayFactories2025 = new()
     {
         { 01, () => new Y2025Day01() },
@@ -18,6 +20,11 @@ internal class DayFactory : IDayFactory
         { 10, () => new Y2025Day10() },
         { 11, () => new Y2025Day11() },
         { 12, () => new Y2025Day12() }
+    };
+
+    public Dictionary<int, Func<IDay>> dayFactories2017 = new()
+    {
+        { 01, () => new Y2017Day01() },
     };
 
     public Dictionary<int, Func<IDay>> dayFactories2016 = new()
@@ -49,6 +56,7 @@ internal class DayFactory : IDayFactory
         { 25, () => new Y2016Day25() },
     };
 
+
     public Dictionary<int, Func<IDay>> dayFactories2015 = new()
     {
         { 01, () => new Y2015Day01() },
@@ -78,23 +86,22 @@ internal class DayFactory : IDayFactory
         { 25, () => new Y2015Day25() },
     };
 
-    public DayFactory() { }
+    public DayFactory() 
+    {
+        InitialiseFactories();
+    }
 
     public Dictionary<int, Func<IDay>> GetFactory(int year)
     {
-        switch (year)
-        {
-            case 2025:
-                return dayFactories2025;
+        return _factories[year];
+    }
 
-            case 2016:
-                return dayFactories2016;
+    private void InitialiseFactories()
+    {
+        _factories.Add(2015, dayFactories2015);
+        _factories.Add(2016, dayFactories2016);
+        _factories.Add(2017, dayFactories2017);
+        _factories.Add(2025, dayFactories2025);
 
-            case 2015:
-                return dayFactories2015;
-
-            default:
-                throw new Exception("No factories for year specified");
-        }
     }
 }

@@ -424,4 +424,9 @@
     <PackageReference Include="Google.OrTools" Version="9.14.6206" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\2017\" />
+    <Folder Include="Days\2017\02\" />
+  </ItemGroup>
+
 </Project>

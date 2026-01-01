@@ -7,21 +7,7 @@ internal class RunCommandProcessor : IRunCommandProcessor
     private readonly IDayFactory _dayFactory = new DayFactory();
     private readonly int _year;
 
-    public Dictionary<int, Func<IDay>> dayFactories = new()
-    {
-        { 1, () => new Y2025Day01() },
-        { 2, () => new Y2025Day02() },
-        { 3, () => new Y2025Day03() },
-        { 4, () => new Y2025Day04() },
-        { 5, () => new Y2025Day05() },
-        { 6, () => new Y2025Day06() },
-        { 7, () => new Y2025Day07() },
-        { 8, () => new Y2025Day08() },
-        { 9, () => new Y2025Day09() },
-        { 10, () => new Y2025Day10() },
-        { 11, () => new Y2025Day11() },
-        { 12, () => new Y2025Day12() }
-    };
+    public Dictionary<int, Func<IDay>> dayFactories = [];
 
     public RunCommandProcessor(int year)
     {
