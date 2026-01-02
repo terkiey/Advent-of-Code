@@ -19,6 +19,16 @@ public record DayArgs(string filename, int year)
             };
         }
 
+        if (year == 2017)
+        {
+            return filename switch
+            {
+                "day10input.txt" => 1,
+                "day10testinput.txt" => 2,
+                _ => 0,
+            };
+        }
+
         if (year == 2016)
         {
             return filename switch
