@@ -618,4 +618,32 @@
     <PackageReference Include="Google.OrTools" Version="9.14.6206" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\2018\" />
+    <Folder Include="Days\2018\02\" />
+    <Folder Include="Days\2018\03\" />
+    <Folder Include="Days\2018\04\" />
+    <Folder Include="Days\2018\05\" />
+    <Folder Include="Days\2018\06\" />
+    <Folder Include="Days\2018\07\" />
+    <Folder Include="Days\2018\08\" />
+    <Folder Include="Days\2018\09\" />
+    <Folder Include="Days\2018\10\" />
+    <Folder Include="Days\2018\11\" />
+    <Folder Include="Days\2018\12\" />
+    <Folder Include="Days\2018\13\" />
+    <Folder Include="Days\2018\14\" />
+    <Folder Include="Days\2018\15\" />
+    <Folder Include="Days\2018\16\" />
+    <Folder Include="Days\2018\17\" />
+    <Folder Include="Days\2018\18\" />
+    <Folder Include="Days\2018\19\" />
+    <Folder Include="Days\2018\20\" />
+    <Folder Include="Days\2018\21\" />
+    <Folder Include="Days\2018\22\" />
+    <Folder Include="Days\2018\23\" />
+    <Folder Include="Days\2018\24\" />
+    <Folder Include="Days\2018\25\" />
+  </ItemGroup>
+
 </Project>

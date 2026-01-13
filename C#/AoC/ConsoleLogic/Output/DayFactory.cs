@@ -22,6 +22,35 @@ internal class DayFactory : IDayFactory
         { 12, () => new Y2025Day12() }
     };
 
+    public Dictionary<int, Func<IDay>> dayFactories2018 = new()
+    {
+        //{ 01, () => new Y2018Day01() },
+        //{ 02, () => new Y2018Day02() },
+        //{ 03, () => new Y2018Day03() },
+        //{ 04, () => new Y2018Day04() },
+        //{ 05, () => new Y2018Day05() },
+        //{ 06, () => new Y2018Day06() },
+        //{ 07, () => new Y2018Day07() },
+        //{ 08, () => new Y2018Day08() },
+        //{ 09, () => new Y2018Day09() },
+        //{ 10, () => new Y2018Day10() },
+        //{ 11, () => new Y2018Day11() },
+        //{ 12, () => new Y2018Day12() },
+        //{ 13, () => new Y2018Day13() },
+        //{ 14, () => new Y2018Day14() },
+        //{ 15, () => new Y2018Day15() },
+        //{ 16, () => new Y2018Day16() },
+        //{ 17, () => new Y2018Day17() },
+        //{ 18, () => new Y2018Day18() },
+        //{ 19, () => new Y2018Day19() },
+        //{ 20, () => new Y2018Day20() },
+        //{ 21, () => new Y2018Day21() },
+        //{ 22, () => new Y2018Day22() },
+        //{ 23, () => new Y2018Day23() },
+        //{ 24, () => new Y2018Day24() },
+        //{ 25, () => new Y2018Day25() },
+    };
+
     public Dictionary<int, Func<IDay>> dayFactories2017 = new()
     {
         { 01, () => new Y2017Day01() },
@@ -125,6 +154,7 @@ internal class DayFactory : IDayFactory
         _factories.Add(2015, dayFactories2015);
         _factories.Add(2016, dayFactories2016);
         _factories.Add(2017, dayFactories2017);
+        _factories.Add(2018, dayFactories2018);
         _factories.Add(2025, dayFactories2025);
 
     }
