@@ -46,6 +46,7 @@ internal class DayFactory : IDayFactory
         { 20, () => new Y2017Day20() },
         { 21, () => new Y2017Day21() },
         { 22, () => new Y2017Day22() },
+        { 23, () => new Y2017Day23() },
     };
 
     public Dictionary<int, Func<IDay>> dayFactories2016 = new()
