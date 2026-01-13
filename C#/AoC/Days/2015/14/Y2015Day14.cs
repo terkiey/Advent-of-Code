@@ -4,7 +4,17 @@ internal class Y2015Day14 : Day
 {
     protected override void RunLogic(string[] inputLines)
     {
-        int[][] reindeers = new int[inputLines.Length][];
+        int raceTime = -1;
+        if (RunParameter == 1)
+        {
+            raceTime = 2503;
+        }
+        else
+        {
+            raceTime = 1000;
+        }
+
+            int[][] reindeers = new int[inputLines.Length][];
         for (int i = 0; i < inputLines.Length; i++)
         {
             reindeers[i] = new int[3];
@@ -25,7 +35,7 @@ internal class Y2015Day14 : Day
             int flyTime = reindeer[1];
             int restTime = reindeer[2];
 
-            int reindeerDistance = Race(speed, flyTime, restTime, RunParameter);
+            int reindeerDistance = Race(speed, flyTime, restTime, raceTime);
             winningDistance = reindeerDistance > winningDistance ? reindeerDistance : winningDistance;
         }
         AnswerOne = winningDistance.ToString();
@@ -39,7 +49,7 @@ internal class Y2015Day14 : Day
         {
             stateTimes[reindeerIndex] = reindeers[reindeerIndex][1];
         }
-        for (int second = 0; second < RunParameter; second++)
+        for (int second = 0; second < raceTime; second++)
         {
             for (int reindeerIndex = 0; reindeerIndex < inputLines.Length; reindeerIndex++)
             {

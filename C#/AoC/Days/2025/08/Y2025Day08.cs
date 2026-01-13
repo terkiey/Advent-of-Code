@@ -4,10 +4,20 @@ internal class Y2025Day08: Day
 {
     protected override void RunLogic(string[] lines)
     {
+        int iterations = -1;
+        if (RunParameter == 1)
+        {
+            iterations = 1000;
+        }
+        else
+        {
+            iterations = 10;
+        }
+
         IPlayground playground = new Playground(lines);
         playground.CalculateAllDistances();
 
-        for (int iteration = 1; iteration <= RunParameter; iteration++)
+        for (int iteration = 1; iteration <= iterations; iteration++)
         {
             playground.ConnectClosestPair();
         }
