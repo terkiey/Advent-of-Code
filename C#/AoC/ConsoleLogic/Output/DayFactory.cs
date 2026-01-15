@@ -28,7 +28,7 @@ internal class DayFactory : IDayFactory
         { 02, () => new Y2018Day02() },
         { 03, () => new Y2018Day03() },
         { 04, () => new Y2018Day04() },
-        //{ 05, () => new Y2018Day05() },
+        { 05, () => new Y2018Day05() },
         //{ 06, () => new Y2018Day06() },
         //{ 07, () => new Y2018Day07() },
         //{ 08, () => new Y2018Day08() },
